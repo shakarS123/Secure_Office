@@ -8,6 +8,7 @@ class Register extends Component{
             show: false,
             savename: "",
             saveemail: "",
+            savePassword: []
         }
     }
     handalclick=()=>{
@@ -29,7 +30,7 @@ class Register extends Component{
 
     render(){
         return(
-            <div>
+            <div className="iamge">
                 
                 <button className="button" onClick={this.handalclick}><b> Sign In</b></button>
 

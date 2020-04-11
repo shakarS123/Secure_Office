@@ -1,14 +1,21 @@
 .button {
   color: red;
     margin-left: 20px;
-    border-radius: 5px;
+    border-radius: 13px;
     padding: 9px;
     width: 9%;
+    margin: 24px;
 }
-
-.login-form{
-  width: 50%;
-  padding: 15px;
+.App{
+  position: relative;
+  background: url('./image//loading-image.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+}
+.login{
   margin: auto;
+  width: 50%;
 }
-
+ 

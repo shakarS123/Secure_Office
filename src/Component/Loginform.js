@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.css';
+import React, { Component } from 'react';
+import { Form, Button } from 'react-bootstrap';
+
 class Loginform extends Component {
     render() {
         return (
-            <div>
-                <Form className="login-form" >
+            <div className="login">
+                <Form  >
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label className="mt-5">Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" onChange={(e) => { this.saveemail(e) }} />

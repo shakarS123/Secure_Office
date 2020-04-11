@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import Register from './Component/Register';
-import Loginform from './Component/Loginform';
+import Loginform from './Component/Loginform'
+//import image from "./image/"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -11,7 +12,6 @@ function App() {
      
       <Register/>
       <Loginform />
-     
     </div>
   );
 }
