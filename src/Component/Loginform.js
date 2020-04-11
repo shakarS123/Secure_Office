@@ -1,10 +1,27 @@
-import React, {Component } from 'react'
+import React, { Component } from 'react'
 
 class Loginform extends Component {
     render() {
         return (
             <div>
-                Hey this is Loginform. hey bro..jsiwhdi d0ijjh
+                <Form  >
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label className="mt-5">Email address</Form.Label>
+                        <Form.Control type="email" placeholder="Enter email" onChange={(e) => { this.saveemail(e) }} />
+
+                    </Form.Group>
+
+                    <Form.Group controlId="formBasicPassword">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password" placeholder="Password" onChange={(e) => { this.savepass(e) }} />
+                    </Form.Group>
+                    <Form.Group controlId="formBasicCheckbox">
+                        {/* <Form.Check type="checkbox" label="Check me out" /> */}
+                    </Form.Group>
+                    <Button variant="primary" type="submit" onClick={this.saveloginform}>
+                        Login
+  </Button>
+                </Form>
             </div>
         )
     }
