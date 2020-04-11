@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Form, Button } from 'react-bootstrap';
 
 class Loginform extends Component {
     render() {
         return (
-            <div>
+            <div className="login">
                 <Form  >
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label className="mt-5">Email address</Form.Label>
@@ -26,3 +27,5 @@ class Loginform extends Component {
         )
     }
 }
+
+export default Loginform;
