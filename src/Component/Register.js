@@ -32,7 +32,7 @@ class Register extends Component{
         return(
             <div className="iamge">
                 
-                <button className="button" onClick={this.handalclick}><b> Sign In</b></button>
+                <button className="button" onClick={this.handalclick}><b> Sign UP</b></button>
 
                 <Modal show={this.state.show} onHide={this.hideModal}>
                     <Modal.Header closeButton>
