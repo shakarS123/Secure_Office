@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-
+import { Form, Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.css';
 class Loginform extends Component {
     render() {
         return (
             <div>
-                <Form  >
+                <Form className="login-form" >
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label className="mt-5">Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" onChange={(e) => { this.saveemail(e) }} />
@@ -26,3 +27,5 @@ class Loginform extends Component {
         )
     }
 }
+
+export default Loginform;
