@@ -11,7 +11,8 @@ import Navbar from './Component/Navbar';
 function App() {
   return (
     <div className="App">
-     {/* <test/> */}
+      {/* <Console_test/> */}
+     
      <Navbar />
       <Register/>
       <Loginform />
