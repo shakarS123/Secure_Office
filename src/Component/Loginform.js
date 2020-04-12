@@ -2,6 +2,32 @@ import React, { Component } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
 class Loginform extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            savepass: "",
+            saveemail:"",
+            saveloginformdata:[]
+        }
+    }
+    saveemail =(e) =>{
+        this.setState({saveemail:e.target.value})
+        console.log(e.target.value)
+    }
+    savepass =(e)=>{
+        this.setState({savepass:e.target.value})
+        console.log(e.target.value)
+    }
+    saveloginform =(e)=>{
+        let listData =[];
+        let objData={
+            pass:this.state.savepass,
+            email:this.state.saveemail
+        }
+        listData.push(objData)
+        this.setState({saveloginformdata:listData})
+        console.log(listData)
+    }
     render() {
         return (
             <div className="login">
