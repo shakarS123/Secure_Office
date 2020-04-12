@@ -8,6 +8,7 @@ class Register extends Component {
       show: false,
       savename: "",
       saveemail: "",
+      IsSubmit: false,
       savePassword: [],
     };
   }
@@ -24,53 +25,56 @@ class Register extends Component {
     this.setState({ saveemail: e.target.value });
   };
   savePassword = (e) => {
-    this.setState({ savePassword: e.target.value });
+    this.setState({ savePassword: e.target.value, IsSubmit: true });
   };
 
-    render(){
-        return(
-            <div className="iamge">
-                
-                <button className="button" onClick={this.handalclick}><b> Sign UP</b></button>
+  render() {
+    return (
+      <div className="iamge">
+          {/* <Button variant="danger">Danger</Button> */}
+        <Button variant="danger ml-3" onClick={this.handalclick}>
+          <b> Sign Up</b>
+        </Button>
 
         <Modal show={this.state.show} onHide={this.hideModal}>
           <Modal.Header closeButton>
             <Modal.Title>CREATE ACCOUNT </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Enter Name:
-            <input
-              className="form-control mt-2 mb-2"
-              placeholder="Enter Name"
-              onChange={(e) => {
-                this.savename(e);
-              }}
-            ></input>
+              {this.state.IsSubmit?
+              <div>
+                   <select className="state form-control">
+              <option> State</option>
+              <option> BIHAR</option>
+              <option> Mumbai</option>
+            </select>
+            <select className="City form-control">
+              <option> City</option>
+              <option> Patna</option>
+              <option> pune</option>
+            </select>
+              </div>:(
+                  <div>
+             Enter Name:
+            <input className="form-control mt-2 mb-2" placeholder="Enter Name" onChange={(e) => {
+                this.savename(e);}}></input>
             Enter Email:
-            <input
-              className="form-control mt-2"
-              placeholder="Enter Email"
-              onChange={(e) => {
-                this.saveemail(e);
-              }}
-            ></input>
+            <input className="form-control mt-2" placeholder="Enter Email" onChange={(e) => {
+                this.saveemail(e);}} ></input>
             Password:
-            <input
-              className="form-control mt-2"
-              placeholder="Enter password"
-              onChange={(e) => {
-                this.savePassword(e);
-              }}
-            ></input>
+            <input type="password" className="form-control mt-2" placeholder="Enter password" onChange={(e) => {
+                this.savePassword(e);}}></input>
+                  </div>
+              )
+              }
+           
           </Modal.Body>
           <Modal.Footer>
             <div>
               <Button variant="primary" onClick={this.savePassword}>
-                Sign Up
+                Submit
               </Button>
-              
             </div>
-            
           </Modal.Footer>
         </Modal>
       </div>
