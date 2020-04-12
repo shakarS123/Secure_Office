@@ -10,7 +10,7 @@ import Navbar from './Component/Navbar';
 function App() {
   return (
     <div className="App">
-     
+     {/* <test/> */}
      <Navbar />
       <Register/>
       <Loginform />
