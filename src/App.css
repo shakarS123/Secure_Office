@@ -1,11 +1,5 @@
-.button {
-  color: red;
-    margin-left: 20px;
-    border-radius: 13px;
-    padding: 9px;
-    width: 9%;
-    margin: 24px;
-}
+
+
 .App{
   position: relative;
   background: url('./image//loading-image.jpg') no-repeat;
@@ -24,4 +18,9 @@
 .text{
   color:black;
 }
- 
+ .state{
+   margin: 5px;
+ }
+ .City{
+   margin: 8px;
+ }

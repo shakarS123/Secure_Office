@@ -6,10 +6,12 @@ import Loginform from './Component/Loginform'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './Component/Navbar';
+//import Console_test from "./Component/Console_test"
 
 function App() {
   return (
     <div className="App">
+      {/* <Console_test/> */}
      
      <Navbar />
       <Register/>
