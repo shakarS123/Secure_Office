@@ -34,15 +34,21 @@ class Loginform extends Component {
                 <Form className=" ">
                     <h3><center>Log In</center></h3>
                     <Form.Group controlId="formBasicEmail">
-                        <Form.Label className="login_email mt-5"><h5>Email address</h5></Form.Label>
+                        <Form.Label className="login_email">Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" onChange={(e) => { this.saveemail(e) }} />
 
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPassword">
-                        <Form.Label className="text"><h5>Password</h5></Form.Label>
+                        <Form.Label >Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" onChange={(e) => { this.savepass(e) }} />
                     </Form.Group>
+                    <div className="form-group">
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    </div>
+                </div>
                     <Form.Group controlId="formBasicCheckbox">
 
                     </Form.Group>
